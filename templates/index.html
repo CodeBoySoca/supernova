@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="masthead-content">
+ <header>
+    <h1>SUPERNOVA</h1>
+    <nav>
+       <ul>
+        <li><a href="#about-content">About</a></li>
+        <li><a href="#contact-content">Contact</a></li>
+        <li><a href="{{ url_for('signin')}}">Sign in</a></li>
+        <li><a href="{{ url_for('signup')}}">Get started</a></li>
+        <li></li>
+       </ul> 
+    </nav>
+ </header>
+ <div id="content">
+   <h2>Currency of the future</h2>
+   <p>Buy and sell cryptocurrency</p>
+   <a href="{{ url_for('signup')}}" id="">Sign up</a>
+ </div>
+</div>
+<div class="about-content">
+    <h2>Build your crypto portfolio</h2>
+    <p>Manager your portfolio in one place</p>
+    <div class="flex-items">
+      <img src="" alt="">
+      <span>Borsalino</span>
+      <ul>
+        <li>$20,0000</li>
+        <li>2.3%</li>
+        <li><a href="">Buy</a></li>
+      </ul>
+    </div>
+    <div class="flex-items">
+        <img src="" alt="">
+        <span>Chalawan</span>
+        <ul>
+          <li>$5,0000</li>
+          <li>2.3%</li>
+          <li><a href="">Buy</a></li>
+        </ul>
+      </div>
+      <div class="flex-items">
+        <img src="" alt="">
+        <span>Bluu</span>
+        <ul>
+          <li>$2,0000</li>
+          <li>7.0%</li>
+          <li><a href="">Buy</a></li>
+        </ul>
+      </div>
+</div>
+<div class="contact-content">
+  <h2>Contact us</h2>
+  <form method="post">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="subject" placeholder="Subject">
+    <input type="email" name="email" placeholder="E-mail">
+    <textarea name="message" placeholder="Message"></textarea>
+    <input type="submit" value="send">
+  </form>
+</div>
+{% endblock %}
