@@ -1,8 +1,15 @@
 from flask import Flask, render_template
+from flask_wtf.csrf import CSRFProtect
+from dotenv import load_dotenv
+import os
 
+load_dotenv('.env')
 
 app = Flask(__name__)
+csrf = CSRFProtect(app)
 
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 
 @app.route('/')
 def homepage():
@@ -10,11 +17,11 @@ def homepage():
 
 @app.route('/signup')
 def signup():
-    pass
+    return render_template('signup.html')
 
 @app.route('/signin')
 def signin():
-    pass
+    return render_template('signin.html')
 
 @app.route('/logout')
 def logout():

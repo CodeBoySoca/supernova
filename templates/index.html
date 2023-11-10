@@ -1,25 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="masthead-content">
- <header>
-    <h1>SUPERNOVA</h1>
-    <nav>
-       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="{{ url_for('signin')}}">Sign in</a></li>
-        <li><a href="{{ url_for('signup')}}">Get started</a></li>
-        <li></li>
-       </ul> 
-    </nav>
- </header>
  <div id="content">
    <h2>Currency of the future</h2>
    <p>Buy and sell cryptocurrency</p>
    <a href="{{ url_for('signup')}}" id="">Sign up</a>
  </div>
 </div>
-<div class="about">
+<div id="about">
     <h2>Build your crypto portfolio</h2>
     <p>Manager your portfolio in one place</p>
     <div class="flex-items">
@@ -44,7 +31,7 @@
         <a href="">Buy</a>
       </div>
 </div>
-<div class="contact">
+<div id="contact">
   <form method="post">
     <h2>Contact us</h2>
     <input type="text" name="name" placeholder="Name">

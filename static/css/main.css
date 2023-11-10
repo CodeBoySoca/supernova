@@ -8,8 +8,14 @@ html {
 box-sizing: border-box;
 }
 
+body {
+background: rgba(91, 241, 183, 0.1);    
+}
+
+
+    
+
 .masthead-content {
-background: rgba(91, 241, 183, 0.1);
 padding: 3%;
 }
 
@@ -17,10 +23,14 @@ header {
 width: 100%;
 }
 
-header h1 {
-font: normal 600 2.3em "acumin-pro", sans-serif;
-color: #0CD0B9;  
+header h1 { 
 display: inline;
+}
+
+header h1 a {
+font: normal 600 1.2em "acumin-pro", sans-serif;
+color: #0CD0B9; 
+text-decoration: none;
 }
 
 nav {
@@ -73,20 +83,18 @@ text-decoration: none;
 line-height: 2.5em;
 }
 
-
-
-.about {
+#about {
 background: #0DD0B9;
 padding: 3% 0;
 }
 
-.about h2 {
+#about h2 {
 font: normal 800 2em "bonnie", sans-serif;
 color: #134CB7; 
 text-align: center;   
 }
 
-.about p {
+#about p:nth-child(2) {
 font: normal 300 1.2em "bonnie", sans-serif;
 color: #fafafa;    
 text-align: center;
@@ -151,25 +159,23 @@ line-height: 2.3em;
 margin-top: 7px;
 }    
 
-
-
-.contact {
+#contact {
 background: #134CB7;  
 padding: 3% 0;  
 }
 
-.contact form h2 {
+#contact form h2 {
 font: normal 800 2em "bonnie", sans-serif;
 color: #0DD0B9; 
 margin: 25px 0;   
 }
 
-.contact form {
+#contact form {
 margin: 0 auto;
 width: 40%;
 }
 
-.contact input[type='text'] {
+#contact input[type='text'] {
 font: normal 300 1em "acumin-pro", sans-serif; 
 width: 47.5%; 
 height: 50px;   
@@ -177,24 +183,23 @@ margin-bottom: 25px;
 margin-right: 10px;
 }
 
-.contact input[type='email'] {
+#contact input[type='email'] {
 font: normal 300 1em "acumin-pro", sans-serif; 
 width: 100%;
 height: 50px;   
 }
 
-.contact textarea {
+#contact textarea {
 width: 100%;
 height: 200px;
 margin-top: 25px;
 }
 
-.contact textarea::placeholder {
+#contact textarea::placeholder {
 padding: 5px 0 0 5px;
 }
 
-
-.contact input[type='submit'] {
+#contact input[type='submit'] {
 font: normal 600 1em "acumin-pro", sans-serif; 
 width: 25%; 
 height: 60px;   
@@ -206,8 +211,68 @@ color: #134CB7;
 cursor: pointer;
 }
 
+.user-form {
+margin: 9% auto 0 auto;
+width: 20%;
+height: 500px;
+padding: 3%;
+background: #fff;
+border-radius: 20px;
+filter: drop-shadow(2px 2px 3px rgba(0,0,0, 0.2));
+}
+
+#signin-form {
+height: 350px;
+}
+
+.user-form form {  
+margin-top: 35px; 
+}
+
+.user-form form h2 {
+font: normal 800 2em "bonnie", sans-serif;
+color: #0DD0B9; 
+margin: 25px 0;   
+}
+
+.user-form input {
+width: 100%;
+height: 40px;
+border: 1px solid rgba(204, 204, 204, 0.7);
+margin-bottom: 25px;
+}
+
+.user-form input type[type='text']::placeholder,
+.user-form input type[type='password']::placeholder  
+.user-form input type[type='email']::placeholder {
+padding-left: 25px;    
+}
+
+.user-form input[type='submit'] {
+font: normal 600 1em "acumin-pro", sans-serif; 
+width: 30%; 
+height: 50px;   
+margin-top: 5px;
+background: #0CD0B9;
+border: none;
+border-radius: 15px;
+color: #134CB7;
+cursor: pointer;
+}
+
+.user-form span {
+font: normal 500 0.9em "bonnie", sans-serif;
+color: #1e1e1e;    
+text-align: center;
+}
+
+.user-form span a {
+color: #1e1e1e;    
+}
 
 /*
+
+
 
 border: 1px solid red;  
 

@@ -7,6 +7,19 @@
       <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     </head>
     <body>
+        <div class="masthead-content">
+            <header>
+               <h1><a href="{{ url_for('homepage')}}">SUPERNOVA</a></h1>
+               <nav>
+                  <ul>
+                   <li><a href="/#about">About</a></li>
+                   <li><a href="/#contact">Contact</a></li>
+                   <li><a href="{{ url_for('signin')}}">Sign in</a></li>
+                   <li><a href="{{ url_for('signup')}}">Get started</a></li>
+                   <li></li>
+                  </ul> 
+               </nav>
+            </header>
         {% block content %}{% endblock %}
     </body>
 </html>
