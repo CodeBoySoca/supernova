@@ -5,8 +5,8 @@
     <h1>SUPERNOVA</h1>
     <nav>
        <ul>
-        <li><a href="#about-content">About</a></li>
-        <li><a href="#contact-content">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="{{ url_for('signin')}}">Sign in</a></li>
         <li><a href="{{ url_for('signup')}}">Get started</a></li>
         <li></li>
@@ -19,44 +19,38 @@
    <a href="{{ url_for('signup')}}" id="">Sign up</a>
  </div>
 </div>
-<div class="about-content">
+<div class="about">
     <h2>Build your crypto portfolio</h2>
     <p>Manager your portfolio in one place</p>
     <div class="flex-items">
-      <img src="" alt="">
+      <img src="{{ url_for('static', filename='images/borsalino.svg')}}" alt="">
       <span>Borsalino</span>
-      <ul>
-        <li>$20,0000</li>
-        <li>2.3%</li>
-        <li><a href="">Buy</a></li>
-      </ul>
+      <p>$20,0000</p>
+      <p>-2.3%</p>
+      <a href="">Buy</a>
     </div>
     <div class="flex-items">
-        <img src="" alt="">
+        <img src="{{ url_for('static', filename='images/chalawan.svg')}}" alt="">
         <span>Chalawan</span>
-        <ul>
-          <li>$5,0000</li>
-          <li>2.3%</li>
-          <li><a href="">Buy</a></li>
-        </ul>
+        <p>$5,0000</p>
+        <p>+2.3%</p>
+        <a href="">Buy</a>
       </div>
       <div class="flex-items">
-        <img src="" alt="">
+        <img src="{{ url_for('static', filename='images/bluu.svg')}}" alt="">
         <span>Bluu</span>
-        <ul>
-          <li>$2,0000</li>
-          <li>7.0%</li>
-          <li><a href="">Buy</a></li>
-        </ul>
+        <p>$2,0000</p>
+        <p>+7.0%</p>
+        <a href="">Buy</a>
       </div>
 </div>
-<div class="contact-content">
-  <h2>Contact us</h2>
+<div class="contact">
   <form method="post">
+    <h2>Contact us</h2>
     <input type="text" name="name" placeholder="Name">
     <input type="text" name="subject" placeholder="Subject">
     <input type="email" name="email" placeholder="E-mail">
-    <textarea name="message" placeholder="Message"></textarea>
+    <textarea name="message" placeholder="Message"></textarea><br>
     <input type="submit" value="send">
   </form>
 </div>
