@@ -329,9 +329,26 @@ font: normal 800 0.9em "bonnie", sans-serif;
 color: #1e1e1e; 
 }
 
+/* Messages */
+
+.messages-container {
+width: 65%;  
+margin: 8% auto 0 15%; 
+}
 
 
+.messages h3 {
+width: 48%;
+display: block;
+text-align: left;
+font: normal 800 1.3em "bonnie", sans-serif;
+color: #134CB7; 
+}
 
+
+.messages .flex-items {   
+width: 100%;
+}
 
 
 

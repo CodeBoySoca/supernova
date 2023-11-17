@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="messages-container">
+   <div class="messages">
+    <h3>Messages</h3>
+    <div class="flex-items">
+        <img src="{{ url_for('static', filename='images/borsalino.svg')}}" alt="">
+        <span>Borsalino</span>
+        <p>You purchased 10 shares costing $2500 a share</p>
+        <p>Aug, 26 2023</p>
+      </div>
+      <div class="flex-items">
+          <img src="{{ url_for('static', filename='images/chalawan.svg')}}" alt="">
+          <span>Chalawan</span>
+          <p>You purchased 10 shares costing $2500 a share</p>
+          <p>Aug, 26 2023</p>
+        </div>
+        <div class="flex-items">
+          <img src="{{ url_for('static', filename='images/bluu.svg')}}" alt="">
+          <span>Bluu</span>
+          <p>You purchased 10 shares costing $2500 a share</p>
+          <p>Aug, 26 2023</p>
+        </div>
+  </div>
+</div>
+{% endblock %}
