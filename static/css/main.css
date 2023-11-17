@@ -12,9 +12,6 @@ body {
 background: rgba(91, 241, 183, 0.1);    
 }
 
-
-    
-
 .masthead-content {
 padding: 3%;
 }
@@ -127,7 +124,6 @@ margin: 1.5% 0 0 1%;
 padding-bottom: 15px;
 }
 
-
 .flex-items p {
 width: 40%;
 margin-left: 5%;
@@ -142,7 +138,6 @@ color: #134CB7;
 text-align: center;  
 font-size: 1em;
 }
-
 
 .flex-items a {
 padding-right: 0 !important; 
@@ -269,6 +264,76 @@ text-align: center;
 .user-form span a {
 color: #1e1e1e;    
 }
+
+
+/* portfolio */
+
+.portfolio-container {
+width: 65%;  
+margin: 8% auto 0 15%; 
+}
+
+.portfolio {
+width: 100%;  
+margin-top: 10%; 
+}
+
+.portfolio-graph h2 {
+font: normal 600 1.4em "bonnie", sans-serif;
+color: #0DD0B9;
+}
+
+.portfolio-graph h1 {
+font: normal 700 2.5em "acumin-pro", sans-serif;
+color: #1e1e1e; 
+}
+
+
+.portfolio-graph ul li {
+list-style-type: none;
+display: inline; 
+font: normal 700 0.9em "bonnie", sans-serif;
+color: #1e1e1e;  
+padding-right: 50px;   
+}
+
+.portfolio h3 {
+width: 48%;
+display: block;
+text-align: left;
+font: normal 800 1.3em "bonnie", sans-serif;
+color: #134CB7; 
+}
+
+.portfolio .flex-items {   
+width: 100%;
+}
+
+#portfolio-flex-container {
+display: flex;
+flex-direction: row; 
+margin-top: 25px;
+}
+
+.portfolio-item {
+margin-right: 25px;
+}
+
+.portfolio-item p:first-of-type {
+font: normal 700 1.2em "bonnie", sans-serif;
+color: #0CD0B9; 
+}
+
+.portfolio-item p:last-of-type {
+font: normal 800 0.9em "bonnie", sans-serif;
+color: #1e1e1e; 
+}
+
+
+
+
+
+
 
 /*
 

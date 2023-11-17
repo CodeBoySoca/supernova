@@ -1,19 +1,21 @@
 from flask import Flask, render_template
 from flask_wtf.csrf import CSRFProtect
 from dotenv import load_dotenv
+from mongoframes import *
+from models import *
 import os
 
 load_dotenv('.env')
 
 app = Flask(__name__)
 csrf = CSRFProtect(app)
-
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-app.config['MONGO_URI'] = os.getenv('MONGO_URI')
+
 
 @app.route('/')
 def homepage():
-    return render_template('index.html')
+    assets = Asset.retrieve()
+    return render_template('index.html', assets=assets)
 
 @app.route('/signup')
 def signup():
@@ -29,17 +31,19 @@ def logout():
 
 @app.route('/portfolio')
 def portfolio():
-    pass
+    return render_template('portfolio.html')
 
 @app.route('/messages')
 def messages():
-    pass
+    return render_template('messages.html')
 
 @app.route('/account')
 def account():
-    pass
+    return render_template('account.html')
 
-
+@app.route('/asset/<id>')
+def asset(id):
+    return render_template('asset.html')
 
 
 

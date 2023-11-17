@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="portfolio-container">
+  <div class="portfolio-top">   
+    <div class="portfolio-graph">
+        <h2>Total</h2>
+        <h1>$9,055.00</h1>
+        <ul>
+         <li>1D</li>  
+         <li>1WK</li>  
+         <li>1MTH</li>  
+         <li>2MTH</li>  
+         <li>YEAR</li>  
+         <li>ALL</li>  
+       </ul>
+    </div> 
+   </div>     
+    <div id="portfolio-flex-container"> 
+        <div class="portfolio-item">
+          <p>Available</p>
+          <p>$1500.00</p>  
+          <div class="bar-graph"></div>
+        </div>
+        <div class="portfolio-item">
+            <p>Invested</p>
+            <p>$7750.00</p>  
+            <div class="bar-graph"></div>
+        </div> 
+   </div>
+  <div class="portfolio">
+    <h3>Your digital assets</h3>
+    <div class="flex-items">
+        <img src="{{ url_for('static', filename='images/borsalino.svg')}}" alt="">
+        <span>Borsalino</span>
+        <p>$20,0000</p>
+        <p>-2.3%</p>
+        <a href="{{ url_for('asset', id='')}}">Buy</a>
+      </div>
+      <div class="flex-items">
+          <img src="{{ url_for('static', filename='images/chalawan.svg')}}" alt="">
+          <span>Chalawan</span>
+          <p>$5,0000</p>
+          <p>+2.3%</p>
+          <a href="{{ url_for('asset', id='')}}">Buy</a>
+        </div>
+        <div class="flex-items">
+          <img src="{{ url_for('static', filename='images/bluu.svg')}}" alt="">
+          <span>Bluu</span>
+          <p>$2,0000</p>
+          <p>+7.0%</p>
+          <a href="{{ url_for('asset', id='')}}">Buy</a>
+        </div>
+  </div>
+</div>
+{% endblock %}
